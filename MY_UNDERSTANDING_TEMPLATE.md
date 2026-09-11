@@ -8,6 +8,25 @@ Do not copy from documentation, your code comments, or AI output. If you are uns
 
 ---
 
+## AI Code Contribution
+
+Rate yourself honestly using the scale below. This rating is not scored on its own — there is no "best" number to pick. What matters is that it's honest and matches what your code and your answers actually show.
+
+| Rating | Description |
+|---|---|
+| 0 | **No AI use.** I did not use AI to generate code, explain concepts, debug, or teach me. |
+| 1 | **AI used only for learning.** I did not use AI to generate code, but I used AI to explain concepts, clarify errors, or guide my understanding. |
+| 2 | **Mixed coding with AI support.** I wrote some code myself and used some AI-generated code. I also used AI to help me understand, debug, or improve my solution. |
+| 3 | **Learned from AI-generated code, then coded myself.** AI generated example code or guidance, but I used that understanding to write or adapt the final code myself. |
+| 4 | **AI generated the code, but I fully understand it.** AI generated most or all of the code, but I can explain how it works, why it works, and how the main parts connect. |
+| 5 | **AI generated the code with limited understanding.** AI generated most or all of the code, and I cannot confidently explain how or why everything works. |
+
+**My rating:** ___
+
+> If you rated **2 or higher**, also complete the "AI Process" section at the end of this document.
+
+---
+
 ## Backend
 
 **1. What does each HTTP method in your API mean — GET, POST, PUT or PATCH, and DELETE? Why do we use different methods instead of just using POST for everything?**
@@ -103,5 +122,33 @@ Do not copy from documentation, your code comments, or AI output. If you are uns
 ---
 
 **16. What was the hardest part of connecting your React app to your Express API, and what did you do to get past it?**
+
+*Your answer:*
+
+---
+
+## AI Process
+
+Only complete this section if you rated yourself **2 or higher** on the AI Code Contribution Scale above. If you rated 0 or 1, write "N/A" under each question.
+
+**17. If you used AI to generate any code, how did you break the work into steps or prompts? Give one example of a specific prompt you used, rather than a single "build the whole app" request.**
+
+*Your answer:*
+
+---
+
+**18. Describe one specific thing an AI tool generated that you changed, corrected, or rejected — and why.**
+
+*Your answer:*
+
+---
+
+**19. Describe one real bug or error you ran into while building this. How did you actually figure out what was wrong, beyond pasting the error back into the chat?**
+
+*Your answer:*
+
+---
+
+**20. Pick one route (backend) or one component (frontend) that AI helped generate. Without looking back at your AI chat history, explain what it does and why it works, in your own words.**
 
 *Your answer:*

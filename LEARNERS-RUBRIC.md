@@ -61,6 +61,14 @@ There is no pass or fail. Your score tells you where your understanding is stron
 - You can explain where your API's base URL is defined and why it isn't hardcoded in every fetch call
 - You can explain, in your own words, the full round trip of one action in your app (e.g. deleting a product) from the click in the browser to the array changing on the server and back
 
+### AI Tool Usage
+
+#### 12. AI Code Contribution
+- You rated yourself honestly on the **AI Code Contribution Scale**, and that rating is consistent with what your code and your other written answers actually show
+- If you rated 2 or higher: you can show how you broke the work into small, directed prompts rather than one large "build the whole thing" request
+- If you rated 2 or higher: you can point to at least one specific thing you changed, corrected, or rejected from AI-generated output, and explain why
+- If you rated 2 or higher: you can describe one real bug or error you hit and how it was actually diagnosed — not just "I pasted the error back into the chat"
+
 ---
 
 ## Score Bands
@@ -84,3 +92,14 @@ Completing any stretch goals (MongoDB Atlas, input validation surfaced in the UI
 ## A Note on Assessment Method
 
 There is no video walkthrough for this assessment. Your understanding is assessed entirely through your code and your written answers in `my-understanding.md`. Answer thoughtfully and in your own words — vague or copied answers are easy to spot and will be treated as a gap in understanding, not a working answer.
+
+---
+
+## A Note on AI Usage & Scoring
+
+Your AI Code Contribution Scale rating is **not** scored on its own — a 0 does not score higher than a 5, and there is no benefit to under- or over-stating how much AI you used. What is assessed is:
+
+1. Whether your rating is **honest and consistent** — if you rate yourself a 0 or 1 but cannot explain basic concepts, or rate yourself a 5 but your written answers show deep, precise understanding, that mismatch is what gets flagged, not the number itself.
+2. Whether, for any rating of 2 or higher, you can demonstrate a **directed and verified process** — you broke the work into steps, tested what was generated, caught and fixed at least one thing, and can explain a bug you actually hit.
+
+A learner who honestly rates themselves a 5 and clearly shows good process control can score just as well as a learner who wrote everything by hand and rates themselves a 0. A learner who claims a 0 but whose code and answers suggest otherwise will score worse than if they had simply been honest.

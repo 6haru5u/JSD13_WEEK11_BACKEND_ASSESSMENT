@@ -20,6 +20,8 @@ What the assessment measures is your **understanding**. You need to be able to e
 
 The best approach: use AI as a learning tool, not a shortcut. Ask it to explain things, not just produce them.
 
+**You will also rate your own AI use.** At the top of `my-understanding.md` you'll find the **AI Code Contribution Scale** (0–5, from "no AI use" to "AI generated the code with limited understanding"). Pick the number that honestly describes how you worked — the number itself is not scored, so there's no benefit to under- or over-stating it. What is assessed is whether your rating is honest and consistent with your code and answers, and whether whatever AI use you did have was directed and verified rather than just accepted. If you select 2 or higher on the scale, you'll also answer a short set of process questions about how you used AI — see `my-understanding.md`.
+
 ---
 
 ## What You Are Building
@@ -195,7 +197,7 @@ Push your project (both `client/` and `server/`) to a single **public** GitHub r
 A short README explaining how to run your project locally: how to install dependencies and start both the server and the client, and what ports they run on.
 
 ### 3. my-understanding.md — lives at the root of your GitHub repo
-Use `MY_UNDERSTANDING_TEMPLATE.md` as your starting point — copy it into your project, rename it `my-understanding.md`, and answer all questions in your own words.
+Use `MY_UNDERSTANDING_TEMPLATE.md` as your starting point — copy it into your project, rename it `my-understanding.md`, and answer all questions in your own words. This includes rating yourself on the **AI Code Contribution Scale** at the top, and — if you rated 2 or higher — the AI process questions at the end.
 
 Write as if explaining to a friend. Do not copy from documentation or AI output. This is where your understanding is actually assessed, so take it seriously — there is no video to fall back on.
 
