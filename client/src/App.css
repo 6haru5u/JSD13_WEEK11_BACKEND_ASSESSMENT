@@ -200,6 +200,8 @@ body {
 }
 
 .form-input {
+  width: 100%;
+  box-sizing: border-box;
   background: #0f172a;
   border: 1px solid var(--border-color);
   color: var(--text-primary);

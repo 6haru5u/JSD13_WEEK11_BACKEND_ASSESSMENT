@@ -106,41 +106,39 @@ export default function ProductForm({ editingProduct, onSubmit, onCancel, isLoad
           />
         </div>
 
-        <div className="form-row">
-          <div className="form-group">
-            <label htmlFor="product-price" className="form-label">
-              Price (฿)
-            </label>
-            <input
-              id="product-price"
-              name="price"
-              type="number"
-              className="form-input"
-              placeholder="0.00"
-              min="0"
-              step="0.01"
-              value={form.price}
-              onChange={handleChange}
-              required
-            />
-          </div>
+        <div className="form-group">
+          <label htmlFor="product-price" className="form-label">
+            Price (฿)
+          </label>
+          <input
+            id="product-price"
+            name="price"
+            type="number"
+            className="form-input"
+            placeholder="0.00"
+            min="0"
+            step="0.01"
+            value={form.price}
+            onChange={handleChange}
+            required
+          />
+        </div>
 
-          <div className="form-group">
-            <label htmlFor="product-quantity" className="form-label">
-              Quantity
-            </label>
-            <input
-              id="product-quantity"
-              name="quantity"
-              type="number"
-              className="form-input"
-              placeholder="1"
-              min="0"
-              step="1"
-              value={form.quantity}
-              onChange={handleChange}
-            />
-          </div>
+        <div className="form-group">
+          <label htmlFor="product-quantity" className="form-label">
+            Quantity
+          </label>
+          <input
+            id="product-quantity"
+            name="quantity"
+            type="number"
+            className="form-input"
+            placeholder="1"
+            min="0"
+            step="1"
+            value={form.quantity}
+            onChange={handleChange}
+          />
         </div>
 
         <div className="form-actions">
