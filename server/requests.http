@@ -1,0 +1,82 @@
+### Get all products
+GET http://localhost:3000/products
+
+### Get all products — filter by name
+GET http://localhost:3000/products?name=keyboard
+
+### Get all products — sort by price
+GET http://localhost:3000/products?sort=price
+
+### Get all products — filter + sort together
+GET http://localhost:3000/products?name=m&sort=price
+
+### Get a single product by ID
+GET http://localhost:3000/products/1
+
+### Get a product that doesn't exist (expect 404)
+GET http://localhost:3000/products/999
+
+### Add a new product
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+  "name": "USB-C Hub",
+  "price": 1290,
+  "quantity": 8
+}
+
+### Add a product with defaults (quantity defaults to 1)
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+  "name": "Mousepad XL",
+  "price": 450
+}
+
+### Add a product — missing required field (expect 400)
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+  "name": "No Price Product"
+}
+
+### Add a product — invalid price (expect 400)
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+  "name": "Bad Product",
+  "price": "not-a-number"
+}
+
+### Update a product (PUT — replaces all fields)
+PUT http://localhost:3000/products/1
+Content-Type: application/json
+
+{
+  "name": "Mechanical Keyboard Pro",
+  "price": 3299,
+  "quantity": 3
+}
+
+### Update a product that doesn't exist (expect 404)
+PUT http://localhost:3000/products/999
+Content-Type: application/json
+
+{
+  "name": "Ghost Product",
+  "price": 100,
+  "quantity": 1
+}
+
+### Delete a product
+DELETE http://localhost:3000/products/2
+
+### Delete a product that doesn't exist (expect 404)
+DELETE http://localhost:3000/products/999
+
+### Health check
+GET http://localhost:3000/
