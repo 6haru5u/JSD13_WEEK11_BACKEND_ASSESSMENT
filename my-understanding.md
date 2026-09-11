@@ -204,14 +204,19 @@ Putting it in one place avoids hardcoding strings across multiple components. If
 **15. After you add, edit, or delete a product, your on-screen list updates without a page refresh. Explain how — what actually causes React to re-render with the new data?**
 
 *Your answer:*
-React re-renders components whenever their **state** or **props** change.
+**Difference between Server State and UI State:**
+- **Server State**: The master truth stored on the Express server (in our `products` array in RAM or database).
+- **UI State**: The current snapshot of data stored in React component memory (`useState` in `App.jsx`) used to render the screen.
 
-In our app, the product list is stored in the `products` state in `App.jsx`. When an API operation (Add, Edit, Delete) completes successfully:
-- For Add: `setProducts(prev => [newProduct, ...prev])` updates state with the new item.
-- For Edit: `setProducts(prev => prev.map(...))` replaces the updated product.
-- For Delete: `setProducts(prev => prev.filter(...))` removes the deleted item.
+**How we keep them in sync:**
+React re-renders components whenever their **state** or **props** change. When an action occurs (Add, Edit, Delete):
+1. We first send an HTTP request (`POST`, `PUT`, `DELETE`) to mutate the **Server State**.
+2. Once the server confirms success with a `200 OK` or `201 Created` status code and returns the data, we call `setProducts` to update the **UI State**:
+   - For Add: `setProducts(prev => [newProduct, ...prev])` updates state with the new item.
+   - For Edit: `setProducts(prev => prev.map(...))` replaces the updated product.
+   - For Delete: `setProducts(prev => prev.filter(...))` removes the deleted item.
 
-Because `setProducts` modifies React state, React automatically triggers a re-render of `App` and passes the new array as props to `ProductList`, updating the UI instantly without a browser page reload.
+Because `setProducts` modifies React's UI state with the exact result returned from the server, the UI state stays in 1-to-1 sync with the server state without requiring a full browser page reload (F5).
 
 ---
 
